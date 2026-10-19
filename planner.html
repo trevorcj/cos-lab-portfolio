@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <title>Planner | Chimamanda Justus - Student Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet" />
+
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+
+  <body>
+    <aside>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="projects.html">projects</a></li>
+          <li><a href="planner.html">planner</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main>
+      <header>
+        <p>chimamanda justus</p>
+        <span class="supporting">academic planner</span>
+      </header>
+
+      <section class="hero">
+        <p>
+          A simple place to organize my assignments, plan study sessions, and
+          keep track of upcoming deadlines.
+        </p>
+      </section>
+
+      <section class="planner" aria-labelledby="tasks-heading">
+        <h2 class="title">my tasks</h2>
+
+        <form class="task-form" id="task-form">
+          <div>
+            <input
+              type="text"
+              name="task"
+              id="task"
+              placeholder="add a new task..."
+              autocomplete="off"
+              required />
+          </div>
+
+          <div>
+            <input
+              type="date"
+              name="task-date"
+              id="task-date"
+              aria-label="Task due date" />
+          </div>
+
+          <button type="submit">add task</button>
+        </form>
+
+        <ul class="task-list" id="task-list" aria-label="My tasks"></ul>
+
+        <p class="empty-state" id="empty-state" hidden>
+          No tasks yet. Add a task to get started.
+        </p>
+      </section>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

@@ -19,9 +19,10 @@
       <nav>
         <ul>
           <li><a href="index.html">home</a></li>
-          <li><a href="#">projects</a></li>
-          <li><a href="#">planner</a></li>
-          <li><a href="#">contact</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="projects.html">projects</a></li>
+          <li><a href="planner.html">planner</a></li>
+          <li><a href="contact.html">contact</a></li>
         </ul>
       </nav>
     </aside>
@@ -40,36 +41,100 @@
           >. i enjoy learning how technology works and using it to solve
           real-world problems.
         </p>
+
+        <div class="voice-note-container">
+          <div class="voice-note" role="region" aria-label="Audio introduction">
+            <audio id="about-audio" preload="metadata" src="about.m4a">
+              Your browser does not support the audio element.
+            </audio>
+
+            <button
+              type="button"
+              class="voice-play-btn"
+              id="voice-play-btn"
+              aria-label="Play audio introduction">
+              <svg
+                class="play-icon"
+                viewBox="0 0 24 24"
+                width="13"
+                height="13"
+                aria-hidden="true">
+                <polygon points="6,3 20,12 6,21" fill="currentColor" />
+              </svg>
+              <svg
+                class="pause-icon"
+                viewBox="0 0 24 24"
+                width="13"
+                height="13"
+                aria-hidden="true"
+                style="display: none">
+                <rect
+                  x="5"
+                  y="4"
+                  width="4"
+                  height="16"
+                  fill="currentColor"
+                  rx="1" />
+                <rect
+                  x="15"
+                  y="4"
+                  width="4"
+                  height="16"
+                  fill="currentColor"
+                  rx="1" />
+              </svg>
+            </button>
+
+            <div
+              class="voice-waveform"
+              id="voice-waveform"
+              role="slider"
+              aria-label="Audio scrubber"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-valuenow="0"
+              tabindex="0"></div>
+
+            <span
+              class="voice-time-left"
+              id="voice-time-left"
+              aria-label="Time remaining"
+              >0:00</span
+            >
+          </div>
+        </div>
       </div>
 
       <section class="education">
         <h2 class="title">educational background</h2>
 
         <table class="timeline-table">
-          <tr>
-            <td class="supporting">present</td>
-            <td class="content-cell">
-              MIVA Open University
+          <tbody>
+            <tr>
+              <td class="supporting">present</td>
+              <td class="content-cell">
+                MIVA Open University
 
-              <span class="sub-entry">software engineering</span>
-            </td>
-          </tr>
+                <span class="sub-entry">software engineering</span>
+              </td>
+            </tr>
 
-          <tr>
-            <td class="supporting">2024</td>
-            <td class="content-cell">
-              harvard cs50
-              <span class="sub-entry">computer science</span>
-            </td>
-          </tr>
+            <tr>
+              <td class="supporting">2024</td>
+              <td class="content-cell">
+                harvard cs50
+                <span class="sub-entry">computer science</span>
+              </td>
+            </tr>
 
-          <tr>
-            <td class="supporting">2023</td>
-            <td class="content-cell">
-              altschool africa
-              <span class="sub-entry">software engineering</span>
-            </td>
-          </tr>
+            <tr>
+              <td class="supporting">2023</td>
+              <td class="content-cell">
+                altschool africa
+                <span class="sub-entry">software engineering</span>
+              </td>
+            </tr>
+          </tbody>
         </table>
       </section>
 
